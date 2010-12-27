@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/applications/!svn/ver/1/nadukete/tests
+END
+phpunit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/applications/!svn/ver/1/nadukete/tests/phpunit.xml
+END

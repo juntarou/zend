@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/libs/!svn/ver/1/library/Zend/Rest
+END
+Client.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/libs/!svn/ver/1/library/Zend/Rest/Client.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/libs/!svn/ver/1/library/Zend/Rest/Exception.php
+END
+Route.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/libs/!svn/ver/1/library/Zend/Rest/Route.php
+END
+Controller.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/libs/!svn/ver/1/library/Zend/Rest/Controller.php
+END
+Server.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/libs/!svn/ver/1/library/Zend/Rest/Server.php
+END

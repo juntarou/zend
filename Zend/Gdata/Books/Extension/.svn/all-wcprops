@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/libs/!svn/ver/1/library/Zend/Gdata/Books/Extension
+END
+InfoLink.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/libs/!svn/ver/1/library/Zend/Gdata/Books/Extension/InfoLink.php
+END
+BooksCategory.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/libs/!svn/ver/1/library/Zend/Gdata/Books/Extension/BooksCategory.php
+END
+BooksLink.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/libs/!svn/ver/1/library/Zend/Gdata/Books/Extension/BooksLink.php
+END
+Embeddability.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/libs/!svn/ver/1/library/Zend/Gdata/Books/Extension/Embeddability.php
+END
+PreviewLink.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/libs/!svn/ver/1/library/Zend/Gdata/Books/Extension/PreviewLink.php
+END
+Review.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/libs/!svn/ver/1/library/Zend/Gdata/Books/Extension/Review.php
+END
+ThumbnailLink.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/libs/!svn/ver/1/library/Zend/Gdata/Books/Extension/ThumbnailLink.php
+END
+AnnotationLink.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/libs/!svn/ver/1/library/Zend/Gdata/Books/Extension/AnnotationLink.php
+END
+Viewability.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/libs/!svn/ver/1/library/Zend/Gdata/Books/Extension/Viewability.php
+END

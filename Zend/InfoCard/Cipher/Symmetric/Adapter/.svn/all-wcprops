@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/libs/!svn/ver/1/library/Zend/InfoCard/Cipher/Symmetric/Adapter
+END
+Aes128cbc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/libs/!svn/ver/1/library/Zend/InfoCard/Cipher/Symmetric/Adapter/Aes128cbc.php
+END
+Aes256cbc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/libs/!svn/ver/1/library/Zend/InfoCard/Cipher/Symmetric/Adapter/Aes256cbc.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/libs/!svn/ver/1/library/Zend/InfoCard/Cipher/Symmetric/Adapter/Abstract.php
+END
