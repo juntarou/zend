@@ -11,7 +11,7 @@ window.onunload = function(){
 
     var bodyId = $$("body")[0].id;
     var actionUrl = bodyId.gsub("_","/");
-    new Ajax.Request("http://logico.lab.in.nttpc.co.jp/php_front/" + actionUrl,
+    new Ajax.Request("" + actionUrl,
     {
         method: "post",
         asynchronous: true,
@@ -70,7 +70,7 @@ inputClass.prototype = {
     actionUrl: null,
 
     // baseUrl
-    baseUrl: "http://logico.lab.in.nttpc.co.jp/php_front/",
+    baseUrl: "",
     
     // eval済みのXHRオブジェクト
     responseJson: null,
