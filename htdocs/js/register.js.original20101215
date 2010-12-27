@@ -6,7 +6,7 @@
  *********************************************************************/
 
 // constants url
-var baseUrl = "http://logico.lab.in.nttpc.co.jp/php_front/signup/";
+var baseUrl = "";
 var registerLoadUri = baseUrl + "registerload/format/json";
 var registerInitUri = baseUrl + "registerinit/format/json";
 var zipSearchUri      = baseUrl + "zipsearch/format/json";
