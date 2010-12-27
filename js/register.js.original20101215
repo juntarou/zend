@@ -6,10 +6,10 @@
  *********************************************************************/
 
 // constants url
-var baseUrl = "http://logico.lab.in.nttpc.co.jp/php_front/signup/";
-var registerLoadUri = baseUrl + "registerload/format/json";
-var registerInitUri = baseUrl + "registerinit/format/json";
-var zipSearchUri      = baseUrl + "zipsearch/format/json";
+var baseUrl = "";
+var registerLoadUri = baseUrl + "";
+var registerInitUri = baseUrl + "";
+var zipSearchUri      = baseUrl + "";
 
 //セレクトボックスパラメータ
 var selectBoxArray = {
