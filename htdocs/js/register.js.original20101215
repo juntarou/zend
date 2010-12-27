@@ -1,0 +1,327 @@
+// register.js
+
+
+/*********************************************************************
+ *  設定変更可能エリア
+ *********************************************************************/
+
+// constants url
+var baseUrl = "http://logico.lab.in.nttpc.co.jp/php_front/signup/";
+var registerLoadUri = baseUrl + "registerload/format/json";
+var registerInitUri = baseUrl + "registerinit/format/json";
+var zipSearchUri      = baseUrl + "zipsearch/format/json";
+
+//セレクトボックスパラメータ
+var selectBoxArray = {
+    span: {
+	1 : "1年契約",
+	2 : "2年契約",
+	3 : "3年契約",
+	4 : "5年契約"
+    },
+    payment: {
+	1 : "クレジットカード払い",
+	2 : "請求書払い"
+    },
+    creditCardExpYear: {
+        0 : "選択して下さい"
+    },
+    creditCardExpMonth: {
+        0 : "選択して下さい"
+    }
+};
+
+// エラーテンプレート用のフィールドラベル
+// ToDo テンプレートが複数にまたがる為、2次元配列にする
+var lavel = {
+    "span": "契約年数",
+    "payment": "お支払い方法",
+    "userName": "ご契約者名",
+    "creditCardName": "カード名義",
+    "creditCardNumber": "カード番号",
+    'creditCardExpYear'  : 'カード有効期限年',
+    'creditCardExpMonth' : 'カード有効期限月',
+    'wtransName' : "宛名",
+    'wtransZip' : "郵便番号",
+    'wtransSate' : "都道府県",
+    'wtransCity' : "市区郡",
+    'wtransAddress' : "町名番地"
+};
+
+
+// validation method
+/*
+ * 使用例　　field : [rule1,rule2,rule3...]
+ * NotEmpty : 未入力禁止
+ * Digit    : 数字のみ許可
+ * max:num  : 最大文字数
+ * email    : メールフォーマット
+ * twoByte  : 全角のみ許可
+ */
+var validationRules = {
+    span: ["NotEmpty"],
+    payment: ["NotEmpty"],
+    userName: ["NotEmpty","max:20"],
+    creditCardName: ["NotEmpty"],
+    creditCardNumber: ["NotEmpty","Digit"],
+    creditCardExpYear: ["NotEmpty"],
+    creditCardExpMonth: ["NotEmpty"],
+    wtransName: ["NotEmpty"],
+    wtransZip: ["NotEmpty","Digit","EqLength:7"],
+    wtransSate: ["NotEmpty"],
+    wtransCity: ["NotEmpty"],
+    wtransAddress: ["NotEmpty"]
+};
+
+// ボタンアクティブ許可フラグ
+/*
+ * 全部trueになればボタンアクティブ
+ * デフォルトはtrue
+ * 契約期間と支払い方法はデフォルトで選択状態な為、
+ * 初期値がtrue
+ */
+var validAllowFlags = {
+    'span': true,
+    'payment': true,
+    'userName': "",
+    'creditCardName': "",
+    'creditCardNumber': "",
+    'creditCardExpYear': "",
+    'creditCardExpMonth': "",
+    'wtransName': "",
+    'wtransZip': "",
+    'wtransSate': true,
+    'wtransCity': "",
+    'wtransAddress': ""
+};
+
+
+// 表示非表示エリアID
+/*
+ * それぞれの範囲に所属するID名を入れる
+ */
+var Areas = {
+    'payment_10012' : ['creditCardName','creditCardNumber','creditCardExpYear','creditCardExpMonth'],
+    'payment_10013' : ['wtransName','wtransZip','wtransSate','wtransCity','wtransAddress']
+};
+
+ /**  設定変更可能エリアここまで
+ *********************************************************************/
+
+
+
+// window.onload
+window.onload = function() {
+
+    //フォームの入力項目タグを全て取得
+    var inputs = $$(".inputs");
+    inputs.each(function(obj){
+	if (obj.tagName == "SELECT") {
+	    Event.observe(obj,"change", FormEventFunc);
+	    return;
+	}
+	if (obj.tagName == "INPUT") {
+	    Event.observe(obj,"blur", FormEventFunc);
+	    return;
+	}
+
+    });
+
+    Event.observe("zipSearch","click", zipSearch);
+
+    Event.observe("submitBtn","click", confirmFunc);
+    
+    setInitializeLoad();
+}
+
+function zipSearch(e)
+{
+    var zipValue = $('wtransZip').getValue();
+
+    if (!zipValue) {
+        return;
+    }
+    //var data = Form.Element.serialize('wtransZip');
+
+    new Ajax.Request(zipSearchUri,{
+        method: "post",
+        asynchronous: true,
+        postBody:Form.serialize('registerForm'),
+        onSuccess: function(httpObj) {
+            formInit(httpObj);
+        }
+    });
+
+}
+
+// リロード時の非同期通信
+// 入力済みのフィールドの記憶用
+window.onunload = function(){
+    setInitializeUnload();
+}
+
+// フォームの内容が変更される度に呼ぶ
+function changeValueFunc() {
+    alert('month');
+}
+
+// ページロード時の処理
+function setInitializeLoad(){
+    var dispNoneElm = $$(".dispNone");
+    dispNoneElm.each(function(obj){
+        if (obj.className.indexOf("default") == -1) {
+            Element.setStyle(obj,{display: "none"});
+        }
+    });
+
+    new Ajax.Request(registerLoadUri,{
+	method: "post",
+	asynchronous: true,
+	onSuccess: function(httpObj) {
+	   formInit(httpObj); 
+	}	
+    });
+}
+
+// ページリロード時の処理
+// 処理終了後、ロード時の処理へ
+function setInitializeUnload() { 
+
+    new Ajax.Request(registerInitUri,{
+	method: "post",
+	postBody: Form.serialize("registerForm"),
+	asynchronous: true,
+	onSuccess: function(httpObj) {
+	   return; 
+	}	
+    });
+
+}
+
+// 保存してあるフィールドの値を再設定するインターフェース
+function formInit(httpObj)
+{
+    var response = eval("("+httpObj.responseText+")"); 
+    setFormsValue(response.json);
+    apiResponseDisplay(json);
+}
+
+// フォームイベント時の処理
+function FormEventFunc(e)
+{
+    var eventObj = Event.element(e);
+    validClass = new ValidateClass(eventObj);
+    var actionPullDown = eventObj.className;
+    if (actionPullDown.indexOf("pullDownAction") != -1) {
+        // 一旦テンプレートを全て非表示
+        for (key in Areas) {
+            Element.hide(key);
+        }
+
+	var data = Form.serialize("registerForm");
+	new Ajax.Request(registerInitUri,{
+	    method: "post",
+	    postBody: data,
+	    asynchronous: true,
+	    onSuccess: function(httpObj) {
+                //var spHttpObj = httpObj.responseText.split("}}");
+                //var tmpHttpObj = spHttpObj[0] + "}}";
+		var response = eval("("+httpObj.responseText+")");
+                // ページ上部のテキスト切り替え
+                var spanText = selectBoxArray['span'][response.json.span];
+                var paymentText = selectBoxArray['payment'][response.json.payment];
+                var priceText = response.json.price + "円";
+                var mixText = spanText + "&nbsp;" + paymentText + "&nbsp;" + priceText;
+                Element.update("payRes",mixText);
+                
+                apiResponseDisplay(response.json);
+	    }	    
+	});
+        return;
+    } else {
+        var resFlag = "";
+        resFlag = validClass.factory(validationRules[eventObj.name],lavel,false);
+        /*
+        resFlag = validationRules[eventObj.name].detect(function(value,index){
+            var isValid = validClass.factory(value,lavel);
+            if (!isValid) {
+                return true;
+            }
+        });
+        */
+        if (resFlag) {
+            if (eventObj.id == "creditCardExpYear") {
+                var selectYear = eventObj.getValue();
+                createMonthSelectBox(selectYear,null);
+            }
+            validAllowFlags[eventObj.name] = true;
+        } else {
+            if (eventObj.id == "creditCardExpYear") {
+                Element.remove('creditCardExpMonth');
+            }
+            validAllowFlags[eventObj.name] = false;
+        }
+        
+    }
+    //Event.stop(e);
+
+    checkAllowFlag('submitBtn',false);
+}
+
+// 有効期限の「月」タグを生成
+function createMonthSelectBox(year,selectClumn)
+{
+    if (!year) {
+        return;
+    }
+    dateObj = new Date();
+    var current = 1;
+    if (parseInt(year) == parseInt(dateObj.getFullYear())) {
+        current = dateObj.getMonth() + 1;
+    }
+    var creditExpMonthTag = "<select name='creditCardExpMonth' id='creditCardExpMonth' class='inputs' onChange='FormEventFunc(event)'>";
+    if (selectClumn == null) {
+        validAllowFlags['creditCardExpMonth'] = false;
+        creditExpMonthTag += "<option value='' selected='selected'>選択して下さい</option>";
+    } else {
+        creditExpMonthTag += "<option value=''>選択して下さい</option>";
+    }
+    do{
+        if (selectClumn == current) {
+            creditExpMonthTag += "<option value=" + current + " selected='selected'>" + current + "月</option>";
+        } else {
+            creditExpMonthTag += "<option value=" + current + ">" + current + "月</option>";
+        }
+        current += 1;
+    }while(current != 13);
+    creditExpMonthTag += "</select>";
+    if ($("creditCardExpMonth")) {
+        Element.remove('creditCardExpMonth');
+    }
+    new Insertion.After("creditCardExpYearError",creditExpMonthTag);
+    
+}
+
+
+
+// 確認ページへ進む
+function confirmFunc(e)
+{
+    alert("confirm");
+}
+
+/****************************
+ * display set templates
+ ****************************/
+
+
+// 支払い情報テンプレートの切り替え
+function apiResponseDisplay(json)
+{
+    var temps = changeTemplate(json.template);
+    var validClass = new ValidateClass(null);
+    validAllowFlags = validClass.allCheck(validationRules,validAllowFlags,temps,Areas);
+    var disableFlag = false;
+
+    checkAllowFlag('submitBtn',disableFlag);
+}

@@ -1,0 +1,60 @@
+javascript 利用規約
+
+フォームタグには
+action属性やmethod属性はつけず、
+id="stForm"を付ける
+(例
+<form id="stForm">
+
+
+validationが必要な入力フォームには
+必ず、class="inputs"を付ける
+それとname属性と同じ名前でid属性を付ける
+(例
+<input type="text" name="foo" id="foo" class="inputs" />
+
+
+バリデーションのルールを摘要させるには、
+class属性の中に追加でvalidNotEmpty(未入力チェック)などを
+入れて下さい。
+ルール一覧は別途作成します。
+(例
+<input type="text" name="foo" id="foo" class="inputs validNotEmpty validPhone" />
+
+
+プルダウンによるテンプレートの表示・非表示
+テンプレートを囲っている<table>または<div>タグに必要な属性を書く
+１.最初にアクセスした時に表示したいテンプレート
+(例
+<table border="0" id="テンプレート名" class="registTable dispNone default changeTemp">
+
+2.最初は非表示にしておきたいテンプレート
+(例
+<table border="0" id="テンプレート名" class="registTable dispNone changeTemp">
+
+
+テンプレートをプルダウンに影響を受けないようにする
+(例
+<table border="0" id="テンプレート名" class="staticTable registTable">
+
+
+validationエラーメッセージについて
+表示させるエリアに下記のように書くタグは<div>や<span>などの
+閉じる事の出来るタグ
+(例
+<span id="対応するinputタグなどのname属性名 + Error"></span>(空タグ)
+
+
+サイドメニューについて
+スライダー機能を摘要させるには、下記の設定が必要です
+親タグにactionというクラス
+その中のliなどのタグにはdispというクラスを付ける
+(例
+<div id="side_menu">
+<ul class="action">
+<li class="disp">・・・</li>
+<li class="disp">・・・</li>
+<li class="disp">・・・</li>
+</ul>
+</div>
+
