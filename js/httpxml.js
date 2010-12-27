@@ -1,8 +1,8 @@
 // httpxml.js
 
 // constants
-var base_url = "http://logico.lab.in.nttpc.co.jp/php_front/";
-var domainSearchAction = "http://logico.lab.in.nttpc.co.jp/php_front/signup/sdomain/format/json"; 
+var base_url = "";
+var domainSearchAction = ""; 
 
 // window.onload
 window.onload = function() {
