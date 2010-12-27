@@ -11,9 +11,9 @@ defined('APPLICATION_ENV')
 // if (本番サーバーだったら) {
 // define('SMARTY_TEMPLATE_DIR', '');
 // } else {
-define('BASE_URL', 'http://logico.lab.in.nttpc.co.jp/');
-define('PROJECT_PATH','/srv/www/applications/nadukete/');
-define('TEMPLATE_DIR', '/srv/www/templates/');
+define('BASE_URL', '');
+define('PROJECT_PATH','');
+define('TEMPLATE_DIR', '');
 //}
 
 define('APP_CONFIG_DIR_PATH', APPLICATION_PATH . '/configs/');
