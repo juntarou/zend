@@ -1,0 +1,142 @@
+<?php
+
+return array(
+    'jp'   =>	array(
+	'num'	     =>  1,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'com'  =>	array(
+	'num'	     =>  2,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'net'  =>	array(
+	'num'	     =>  3,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'org'  =>	array(
+	'num'	     =>  4,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'info'  =>	array(
+	'num'	     =>  5,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'biz'  =>	array(
+	'num'	     =>  6,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'bz'  =>	array(
+	'num'	     =>  7,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'cc'  =>	array(
+	'num'	     =>  8,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'cx'  =>	array(
+	'num'	     =>  9,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'in'  =>	array(
+	'num'	     =>  10,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'la'  =>	array(
+	'num'	     =>  11,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'me'  =>	array(
+	'num'	     =>  12,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'sc'  =>	array(
+	'num'	     =>  13,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'tv'  =>	array(
+	'num'	     =>  14,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'tw'  =>	array(
+	'num'	     =>  15,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'vc'  =>	array(
+	'num'	     =>  16,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'ws'  =>	array(
+	'num'	     =>  17,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'asia'  =>	array(
+	'num'	     =>  18,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'mobi'  =>	array(
+	'num'	     =>  19,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'co.jp'  =>	array(
+	'num'	     =>  20,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'ne.jp'  =>	array(
+	'num'	     =>  21,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'or.jp'  =>	array(
+	'num'	     =>  22,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+    'gr.jp'  =>	array(
+	'num'	     =>  23,
+	'checked'    =>  '',
+	'startDate'  =>  '',
+	'endDate'    =>  '',
+    ),
+);

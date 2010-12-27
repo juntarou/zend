@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/applications/!svn/ver/8/nadukete/application/configs
+END
+application.ini
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/applications/!svn/ver/5/nadukete/application/configs/application.ini
+END
+fieldsLibrary.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/applications/!svn/ver/8/nadukete/application/configs/fieldsLibrary.php
+END
+constants.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/applications/!svn/ver/27/nadukete/application/configs/constants.php
+END
+registerData.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/applications/!svn/ver/17/nadukete/application/configs/registerData.php
+END
+navigationLists.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/applications/!svn/ver/23/nadukete/application/configs/navigationLists.php
+END
+DomainData.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/applications/!svn/ver/6/nadukete/application/configs/DomainData.php
+END
+validMessages.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/applications/!svn/ver/8/nadukete/application/configs/validMessages.php
+END

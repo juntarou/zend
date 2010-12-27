@@ -1,0 +1,80 @@
+10
+
+dir
+4
+http://localhost/svn/applications/nadukete
+http://localhost/svn/applications
+
+
+
+2010-11-18T09:34:26.904295Z
+4
+nttpc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+466ddd2a-f12b-11df-bbec-6b95be3a646a
+
+tests
+dir
+
+.zfproject.xml
+file
+
+
+
+
+2010-11-16T02:14:39.019318Z
+bace332dfa6e71588ab5859d4aa88068
+2010-11-17T02:55:55.142780Z
+1
+nttpc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2602
+
+application
+dir
+
+library
+dir
+
+config
+dir
+
+docs
+dir
+
+public
+dir
+
