@@ -11,4 +11,4 @@ define("PAYMENT_TEMP_TYPE_CREDIT_ID","10012");
 
 define("DIRECTORY_SEPARATOR","/");
 
-define("LOG_DIR", "/srv/www/logs/");
+define("LOG_DIR", "");
