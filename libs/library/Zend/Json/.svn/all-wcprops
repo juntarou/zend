@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/libs/!svn/ver/1/library/Zend/Json
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/libs/!svn/ver/1/library/Zend/Json/Exception.php
+END
+Expr.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/libs/!svn/ver/1/library/Zend/Json/Expr.php
+END
+Encoder.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/libs/!svn/ver/1/library/Zend/Json/Encoder.php
+END
+Decoder.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/libs/!svn/ver/1/library/Zend/Json/Decoder.php
+END
+Server.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/libs/!svn/ver/1/library/Zend/Json/Server.php
+END

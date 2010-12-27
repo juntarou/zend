@@ -1,0 +1,123 @@
+10
+
+dir
+4
+http://localhost/svn/libs/library/Zend/Feed/Reader/Extension
+http://localhost/svn/libs
+
+
+
+2010-11-18T00:08:37.625402Z
+1
+nttpc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+575d4fd6-f125-11df-8a37-f1801b100086
+
+Atom
+dir
+
+Syndication
+dir
+
+DublinCore
+dir
+
+Thread
+dir
+
+Content
+dir
+
+Slash
+dir
+
+EntryAbstract.php
+file
+
+
+
+
+2010-07-24T17:37:36.000000Z
+43cbf86bb869442b86211d295264c78b
+2010-11-18T00:08:37.625402Z
+1
+nttpc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4620
+
+Podcast
+dir
+
+FeedAbstract.php
+file
+
+
+
+
+2010-01-06T02:05:09.000000Z
+18471a5963ae43b67f83999773750996
+2010-11-18T00:08:37.625402Z
+1
+nttpc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4034
+
+WellFormedWeb
+dir
+
+CreativeCommons
+dir
+
