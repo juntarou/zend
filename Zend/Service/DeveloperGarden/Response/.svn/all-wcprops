@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Response
+END
+BaseType.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Response/BaseType.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Response/Exception.php
+END
+ResponseAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Response/ResponseAbstract.php
+END

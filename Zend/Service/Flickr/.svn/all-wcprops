@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/libs/!svn/ver/1/library/Zend/Service/Flickr
+END
+ResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/libs/!svn/ver/1/library/Zend/Service/Flickr/ResultSet.php
+END
+Result.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/libs/!svn/ver/1/library/Zend/Service/Flickr/Result.php
+END
+Image.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/libs/!svn/ver/1/library/Zend/Service/Flickr/Image.php
+END
