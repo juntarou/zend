@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/libs/!svn/ver/1/library/Zend/Translate
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/libs/!svn/ver/1/library/Zend/Translate/Exception.php
+END
+Plural.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/libs/!svn/ver/1/library/Zend/Translate/Plural.php
+END
+Adapter.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/libs/!svn/ver/1/library/Zend/Translate/Adapter.php
+END

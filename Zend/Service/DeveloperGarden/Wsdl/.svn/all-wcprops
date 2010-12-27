@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Wsdl
+END
+ODGBaseUserService.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Wsdl/ODGBaseUserService.xsd
+END
+VoiceButlerService.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Wsdl/VoiceButlerService.xsd
+END
+SmsValidationUserService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Wsdl/SmsValidationUserService.wsdl
+END
+ccsPort.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Wsdl/ccsPort.wsdl
+END
+localsearch.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Wsdl/localsearch.wsdl
+END
+IPLocation.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Wsdl/IPLocation.wsdl
+END
+TokenService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Wsdl/TokenService.wsdl
+END
+ccsPort.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Wsdl/ccsPort.xsd
+END
+SmsService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Wsdl/SmsService.wsdl
+END
+ODGBaseUserService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Wsdl/ODGBaseUserService.wsdl
+END
+VoiceButlerService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Wsdl/VoiceButlerService.wsdl
+END
+localsearch.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Wsdl/localsearch.xsd
+END
+IPLocation.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/libs/!svn/ver/1/library/Zend/Service/DeveloperGarden/Wsdl/IPLocation.xsd
+END
